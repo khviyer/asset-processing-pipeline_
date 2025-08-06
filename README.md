@@ -35,7 +35,7 @@ The pipeline consists of three main builds:
 
 ### TeamCity Configuration
 
-1.  **Import Project**: Import the `teamcity/` directory into your TeamCity project as a Kotlin DSL configuration.
+1.  **Import Project**: Import the `teamcity/` directory into TeamCity project as a Kotlin DSL configuration.
 2.  **VCS Root**: Update the `AssetPackagingVcsRoot` in `teamcity/src/main/kotlin/AssetPackagingProject.kt` with your Git repository URL.
 3.  **GCS Parameters**: In the `DeliveryToGCS` build configuration, set the following parameters:
     -   `gcs.bucket.name`: Your GCS bucket name (e.g., `Test-Bucket`)
